@@ -3,12 +3,12 @@ name: Deploy Spring Boot App
 
 on:
   push:
-    branches: main
+    branches: [ main ]
   pull_request:
-    branches: main
+    branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
